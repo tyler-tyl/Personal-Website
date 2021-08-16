@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    margin-top: 0px;
+    
+    padding-bottom: 5px;
+    background-position: 0% 50%;
+
+}
+header .logonav  {
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    height: 140px;
+}
+header img {
+    display: inline;
+    bottom: 0px;
+    max-width: 15%;
+    position: absolute;
+    left: 0px;
+}
+header nav {
+    display: inline;
+    max-width: 74%;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+}
+header nav div {
+    display: flex;
+    right: 0px;
+}
+header nav div div  {
+    margin-left: 20px;
+    position: relative;
+    overflow-x: visible;
+    overflow-y: visible;
+
+}
+header nav div div a {
+    color: rgba(0,0,0,1.00);
+    text-decoration: none;
+    font-size: 16pt;
+}
+header .dropdown     {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100vw;
+}
+
+header nav div div:hover .dropdown {
+    display: inline;
+    padding-top: 15px;
+}
+header .dropdown:hover .dropdown {display: inline;}
+
+
+header .pagetitlebuttons {
+    position: relative;
+    height: 380px;
+    /* [disabled]background-image: url(images/volvox-polyphyletic-genus-chlorophyte-green-algae-phy-volvox-polyphyletic-genus-chlorophyte-green-algae-120886218.jpg); */
+    background-size: cover;
+    width: 100vw;
+    display: block;
+}
+header .pagetitlebuttons h1  {
+    position: absolute;
+    font-size: 72px;
+    /* [disabled]line-height: 72px; */
+    color: rgba(255,255,255,0.92);
+    font-weight: bold;
+    width: auto;
+    max-width: 400px;
+    bottom: -36px;
+}
+header .pagetitlebuttons div {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    display: flex;
+    -webkit-box-shadow: 0px 0;
+    box-shadow: 0px 0;
+}
+header .pagetitlebuttons div .bignavbuttons {
+    width: 150px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 15px;
+    border-radius: 8px;
+    background-size: cover;
+    position: static;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 0px;
+    -webkit-box-shadow: -3px 3px rgba(83,83,83,1.00);
+    box-shadow: -3px 3px rgba(83,83,83,1.00);
+    background-image: -webkit-linear-gradient(270deg,rgba(30,39,27,0.06) 50.43%,rgba(61,78,55,0.94) 100%), url(images/volvox.png);
+    background-image: -moz-linear-gradient(270deg,rgba(30,39,27,0.06) 50.43%,rgba(61,78,55,0.94) 100%), url(images/volvox.png);
+    background-image: -o-linear-gradient(270deg,rgba(30,39,27,0.06) 50.43%,rgba(61,78,55,0.94) 100%), url(images/volvox.png);
+    background-image: linear-gradient(180deg,rgba(30,39,27,0.06) 50.43%,rgba(61,78,55,0.94) 100%), url(images/volvox.png);
+}
+header .pagetitlebuttons div .bignavbuttons h3 {
+    position: absolute;
+    bottom: 0px;
+    color: rgba(255,255,255,1.00);
+    max-width: 120px;
+}
+
+
+
+
+
+
+
+footer {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    /* [disabled]margin-left: 20px; */
+    /* [disabled]margin-bottom: 20px; */
+    /* [disabled]margin-right: 20px; */
+    /* [disabled]margin-top: 40px; */
+    background-size: cover;
+}

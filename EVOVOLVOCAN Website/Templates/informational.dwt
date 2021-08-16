@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Homepage</title>
+<!-- TemplateEndEditable -->
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<link href="../headerfooter.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="styles" -->
+<style type="text/css">
+body, td, th {
+    font-family: 'Helvetica Now Display';
+    color: rgba(12,44,10,1);
+}
+aside {
+    width: 25%;
+}
+.middle {
+    width: 50%;
+}
+.nonboxgrid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+.photononbox {
+    grid-template-columns: repeat(2, 1fr);
+}
+header {
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(254,254,254,0.78) 41.28%,rgba(0,0,0,0.51) 99.48%), url(../images/Lab%20pictures/06_DSC0609-HDR.jpg);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(254,254,254,0.78) 41.28%,rgba(0,0,0,0.51) 99.48%), url(../images/Lab%20pictures/06_DSC0609-HDR.jpg);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(254,254,254,0.78) 41.28%,rgba(0,0,0,0.51) 99.48%), url(../images/Lab%20pictures/06_DSC0609-HDR.jpg);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(254,254,254,0.78) 41.28%,rgba(0,0,0,0.51) 99.48%), url(../images/Lab%20pictures/06_DSC0609-HDR.jpg);	
+	}
+</style>
+<!-- TemplateEndEditable -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script type="text/javascript" src="../js/scripts.js" defer></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!-- TemplateParam name="photosection" type="boolean" value="true" -->
+<!-- TemplateParam name="boxsection" type="boolean" value="true" -->
+<!-- TemplateParam name="nonboxsection" type="boolean" value="true" -->
+<!-- TemplateParam name="asideleft" type="boolean" value="true" -->
+</head>
+
+<body>
+<header>
+  <section class="horizontalmargins">
+    <div class="logonav"> 
+		<a href="index.html">
+			<img src="../images/temporary logo.svg" alt="logo" href="index.html">
+
+		</a> 
+      
+      <!--<h2 style="display:inline;">Volvocales Information Project</h2>-->
+      
+      <nav>
+        <div>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="location.html">Location</a></div>
+          <div><a href="members.html">Members</a></div>
+          <div><a href="littlegreenguys.html">Little Green Guys</a></div>
+          <div><a href="#">Research</a>
+            <ul class="dropdown">
+              <li><a href="researchthemes.html">Research Interests</a></li>
+              <li><a href="researchresources.html">Research Projects</a></li>
+            </ul>
+          </div>
+          <div><a href="vip.html">VIP</a></div>
+          <div><a href="volvocaleswiki.html">Volvocales Wiki</a></div>
+          <div><a href="publications.html">Publications</a></div>
+          <div><a href="contacts.html">Contact Us</a></div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <div class="pagetitlebuttons">
+    <section class="horizontalmargins"> <!-- TemplateBeginEditable name="pagetitle" -->
+      <h1>Welcome!</h1>
+      <!-- TemplateEndEditable -->
+      <div> <!-- TemplateBeginRepeat name="navbuttonitem" --> <!-- TemplateBeginEditable name="buttoncontent" --> <a class="bignavbuttons">
+        <h3>About Volvocales</h3>
+        </a> <!-- TemplateEndEditable --> <!-- TemplateEndRepeat --> </div>
+    </section>
+  </div>
+</header>
+<section class="horizontalmargins">
+  <main> <!-- TemplateBeginIf cond="asideleft" --><!-- TemplateBeginEditable name="asideleftcontent" -->
+    <aside id="sidebarfilters">
+      <h3>Genus</h3>
+      <button class="alpha">alpha</button>
+      <button class="bravo">bravo</button>
+      <button class="charlie">charlie</button>
+      <button class="delta">delta</button>
+      <button class="echo">echo</button>
+      <button class="showall">Show All</button>
+    </aside>
+    <!-- TemplateEndEditable --><!-- TemplateEndIf -->
+    <section class="middle"> <!-- TemplateBeginIf cond="nonboxsection" -->
+      <div class="nonboxgrid-container" id="nonboxgrid"> <!-- TemplateBeginRepeat name="nonboxitem" --> <!--TemplateBeginEditable name="nonboxcontent" -->
+        <article class="griditem bravo">
+          <h3>Header</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor tempor sem at iaculis. Donec molestie ultricies sapien. Sed sapien mi, imperdiet non urna eu, finibus elementum urna. Sed tempor sodales odio, in consectetur ante egestas a. Donec elementum a justo et eleifend. Donec sed massa purus. Aliquam ac accumsan purus.</p>
+          <a class="Readmorebutton">Read More</a> </article>
+        <!-- TemplateEndEditable --> <!-- TemplateEndRepeat --> </div>
+      <!-- TemplateEndIf --> <!-- TemplateBeginIf cond="boxsection" -->
+      <div  class="box-container"> <!-- TemplateBeginRepeat name="boxitem" --> <!-- TemplateBeginEditable name="boxcontent" --> <a href="#ex1" rel="modal:open" class="griditem">
+        <h3>Name of Article</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor tempor sem at iaculis. .</p>
+        </a>
+        <div id="ex1" class="modal">
+          <div class="window-content">
+            <p>Description</p>
+            <a href="#" class="genericbutton">Lorem Ipsum</a> <br>
+            <br>
+            <br>
+            <a href="#" rel="modal:close">Close</a> </div>
+        </div>
+        <!-- TemplateEndEditable --> <!-- TemplateEndRepeat --> </div>
+      <!-- TemplateEndIf --> <!-- TemplateBeginIf cond="photosection" -->
+      <div class="photononbox"> <!-- TemplateBeginRepeat name="photoitem" --> <!-- TemplateBeginEditable name="photocontent" -->
+        <article class="griditem"> <img src="../images/volvox.png"  alt=""/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor tempor sem at iaculis. Donec molestie ultricies sapien. Sed sapien mi, imperdiet non urna eu, finibus elementum urna. Sed tempor sodales odio, in consectetur ante egestas a. Donec elementum a justo et eleifend. Donec sed massa purus. Aliquam ac accumsan purus.</p>
+          <a class="Readmorebutton">Read More</a> </article>
+        <!-- TemplateEndEditable --> <!-- TemplateEndRepeat --> </div>
+      <!-- TemplateEndIf --> </section>
+  </main>
+  <footer>
+    <h2>Volvocales Information Project 2021</h2>
+  </footer>
+</section>
+</body>
+</html>
