@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: ambiant;
+    src: url("/fonts/AmbiantLaura Csocsan 2019.otf");
+}
+
+body {
+    background-color: #918080;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-family: ambiant;
+    color: #0C1D0F;
+    font-size: 1.5vmax;
+}
+.maincontent activity activityname {
+    display: block;
+    font-size: 2.5vmax;
+}
+.maincontent activity role {
+    display: block;
+}
+.maincontent activity startdate {
+}
+.maincontent activity enddate {
+}
+.maincontent activity description {
+    display: block;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+.maincontent {
+    width: 50%;
+    margin-left: 10%;
+}
+.maincontent activity {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+
+}
+.header-grid-container  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: stretch;
+    gap: 2%;
+}
