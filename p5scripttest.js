@@ -63,4 +63,7 @@ function drawshape(bgcolor, shapecolor) {
 function draw() {
 	drawshape(bgcolor,shapecolor);
 	counter++;
+	textAlign(CENTER);
+	textSize(windowWidth/random(50));
+	text('WIP?', windowWidth/random(1), windowHeight/random(1));
 }
