@@ -6,7 +6,7 @@ let quantscaley = random(20)+2;
 
 
 function setup() {
-  frameRate(10);
+  frameRate(random(20)+2);
 	iterate(windowWidth,windowHeight);
 }
 
