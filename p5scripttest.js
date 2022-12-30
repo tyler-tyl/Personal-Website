@@ -1,18 +1,19 @@
 let points = [];
-let pointscount = random(20)+5;
+let pointscount = 10
 let counter = 0;
-let quantscalex = random(20)+2;
-let quantscaley = random(20)+2;
-
+let quantscalex = 10
+let quantscaley = 5;
+let bgcolor = Math.random()*127+127;
+let shapecolor = Math.random()*127;
 
 function setup() {
   frameRate(random(20)+2);
 	iterate(windowWidth,windowHeight);
+	
 }
 
 function iterate(x,y) {
 	createCanvas(x, y);
-	
 	
 	for (let i = 0; i < pointscount; i++) {
 		
@@ -24,20 +25,9 @@ function iterate(x,y) {
 	print(points);
 }
 
-function draw() {
-	background(127);
+function drawshape(bgcolor, shapecolor) {
+	background(bgcolor);
 	
-	
-
-	
-	for (let i = 0; i < points.length; i++) {
-		//var noisex = (noise(counter+i,0)-0.5)*50;
-		//var noisey = (noise(0,counter+i)-0.5)*50;
-		//points[i] = [points[i][0]+ noisex,points[i][1]+ noisey];
-  	}
-	print(points);
-	
-	let shapecolor= random(127)+127;
 	for (let i = 1; i < points.length-1; i++) {
 		//strokeWeight(25);
 		//point(points[i-1][0],points[i-1][1]);
@@ -59,6 +49,11 @@ function draw() {
 			int(random(quantscalex+1))*(windowWidth)/quantscalex,
 			int(random(quantscaley+1))*(windowHeight)/quantscaley];
 	
-	counter++;
+	
 
+}
+
+function draw() {
+	drawshape(bgcolor,shapecolor);
+	counter++;
 }
