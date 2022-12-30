@@ -5,8 +5,25 @@
     src: url("/fonts/AmbiantLaura Csocsan 2019.otf");
 }
 
+@font-face {
+    font-family: Lausanne300;
+    src: url("E:/OneDrive - McMaster University/Personal-Website/fonts/TWK Lausanne Pan 2.000/TWKLausannePan-300.otf");
+}
+@font-face {
+    font-family: Lausanne650;
+    src: url("E:/OneDrive - McMaster University/Personal-Website/fonts/TWK Lausanne Pan 2.000/TWKLausannePan-650.otf");
+}
+@font-face {
+    font-family: Lausanne300i;
+    src: url("E:/OneDrive - McMaster University/Personal-Website/fonts/TWK Lausanne Pan 2.000/TWKLausannePan-300Italic.otf");
+}
+@font-face {
+    font-family: Lausanne800;
+    src: url("E:/OneDrive - McMaster University/Personal-Website/fonts/TWK Lausanne Pan 2.000/TWKLausannePan-800.otf");
+}
+
 body {
-    background-color: #918080;
+    background-color: #91A2E2;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -15,24 +32,64 @@ body {
     padding-right: 25px;
     padding-left: 25px;
     padding-bottom: 15px;
-    font-family: ambiant;
-    color: #0C1D0F;
-    font-size: 1.5vmax;
+    color: #000000;
 }
+
+header {
+    font-size: 12pt;
+    font-family: Lausanne800;
+    line-height: 13pt;
+}
+
 .maincontent activity activityname {
     display: block;
-    font-size: 2.5vmax;
+    font-size: 18pt;
+    font-family: Lausanne800;
+    line-height: 16pt;
+    margin-bottom: 5pt;
+    margin-top: 0pt;
 }
+body headline {
+    display: block;
+    font-size: 20vmax;
+    font-family: Lausanne650;
+    line-height: 20vmaxpt;
+    margin-bottom: 5pt;
+    margin-top: 0pt;
+}
+
+
 .maincontent activity role {
     display: block;
+    font-size: 12pt;
+    font-family: Lausanne300i;
+    line-height: 13pt;
+    margin-bottom: 3pt;
+    margin-top: 0pt;
 }
 .maincontent activity startdate {
+	display: inline;
+    font-size: 12pt;
+    font-family: Lausanne650;
+    line-height: 13pt;
+    margin-bottom: 5pt;
+    margin-top: 0pt;
 }
 .maincontent activity enddate {
+	display: inline;
+    font-size: 12pt;
+    font-family: Lausanne650;
+    line-height: 13pt;
+    margin-bottom: 5pt;
+    margin-top: 0pt;
 }
 .maincontent activity description {
     display: block;
-    margin-top: 15px;
+    font-size: 12pt;
+    font-family: Lausanne300;
+    line-height: 13pt;
+    margin-bottom: 0pt;
+    margin-top: 5pt;
 }
 
 
@@ -44,7 +101,7 @@ body {
 
 .maincontent {
     width: 50%;
-    margin-left: 10%;
+    margin-left: 50%;
 }
 .maincontent activity {
     margin-top: 30px;
