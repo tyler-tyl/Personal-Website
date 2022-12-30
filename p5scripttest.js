@@ -25,7 +25,7 @@ function iterate(x,y) {
 }
 
 function draw() {
-	background(0);
+	background(127);
 	
 	
 
@@ -37,15 +37,15 @@ function draw() {
   	}
 	print(points);
 	
-	
+	let shapecolor= random(127)+127;
 	for (let i = 1; i < points.length-1; i++) {
 		//strokeWeight(25);
 		//point(points[i-1][0],points[i-1][1]);
 		//point(points[i][0],points[i][1]);
 		//point(points[i+1][0],points[i+1][1]);
-		fill(255);
+		fill(shapecolor);
 		strokeWeight(1);
-		stroke(255);
+		stroke(shapecolor);
 		beginShape();
 		vertex(points[i+1][0],points[i+1][1]);
 		vertex(points[i][0],points[i][1]);
