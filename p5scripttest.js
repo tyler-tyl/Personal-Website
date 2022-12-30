@@ -65,5 +65,5 @@ function draw() {
 	counter++;
 	textAlign(CENTER);
 	textSize(windowWidth/random(50));
-	text('WIP?', windowWidth/random(1), windowHeight/random(1));
+	text('WIP?', windowWidth*random(1), windowHeight*random(1));
 }
