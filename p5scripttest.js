@@ -1,13 +1,20 @@
 let points = [];
-let pointscount = 10
+let pointscount = Math.random()*20+2
 let counter = 0;
-let quantscalex = 10
-let quantscaley = 5;
-let bgcolor = Math.random()*127+127;
-let shapecolor = Math.random()*127;
+let quantscalex = Math.random()*10+2
+let quantscaley = Math.random()*5+2;
+if (Math.random()>0.5) {
+	var bgcolor = Math.random()*127+12;
+	var shapecolor = Math.random()*127;
+}
+else {
+	var bgcolor = Math.random()*127;
+	var shapecolor = Math.random()*127+127;
+}
+
 
 function setup() {
-  frameRate(random(20)+2);
+  frameRate(30);
 	iterate(windowWidth,windowHeight);
 	
 }
@@ -26,7 +33,7 @@ function iterate(x,y) {
 }
 
 function drawshape(bgcolor, shapecolor) {
-	background(bgcolor);
+	background(bgcolor,bgcolor, bgcolor, 50);
 	
 	for (let i = 1; i < points.length-1; i++) {
 		//strokeWeight(25);
