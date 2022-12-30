@@ -1,8 +1,8 @@
 let points = [];
-let pointscount = 6;
+let pointscount = random(20)+5;
 let counter = 0;
-let quantscalex = 4;
-let quantscaley = 4;
+let quantscalex = random(20)+2;
+let quantscaley = random(20)+2;
 
 
 function setup() {
