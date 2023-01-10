@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 :root {
-  --backgroundcolor: #9A729A;
-  --textcolor: #E2E20C;
+  --backgroundcolor: #E6E62C;
+  --textcolor: #282828;
 }
 
 @font-face {

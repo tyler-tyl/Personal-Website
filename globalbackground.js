@@ -52,55 +52,42 @@ function iteratepoints() {
 
 function generateshape() {
 	let backgroundcolor = color(201, 201, 201);
-	let shapecolor = color(125);
+	let shapecolor = color(0,coin*100+50,coin*100+50);
 	clear();
-	if (coin > 0.5) {
-	for (let i = 0; i < numpoints; i++) {
-		stroke(shapecolor)
-		strokeWeight(noise(floatypos[i][0]/200,floatypos[i][1]/200)*600)
-		point(floatypos[i][0],floatypos[i][1]);
-	}
-	} else{
-		
+
+	if (floor(coin*3)==0) {
+		for (let i = 0; i < numpoints; i++) {
+			stroke(shapecolor)
+			strokeWeight(noise(floatypos[i][0]/200,floatypos[i][1]/200)*600)
+			point(floatypos[i][0],floatypos[i][1]);
+		}
+	} 
+	if (floor(coin*3)==1){
+		for (let i = 0; i < numpoints; i=i+4) {
+			noFill();
+			stroke(shapecolor);
+			strokeWeight(windowWidth/15);
+			beginShape();
+			for (let i = 0; i < numpoints; i++) {
+				curveVertex(floatypos[i][0],floatypos[i][1],0,0);
+			}
+			endShape();
+		}
+	} 
 	
-//	for (let i = 0; i < numpoints; i=i+4) {
-//		stroke(shapecolor);
-//		strokeWeight(floatypos[i][2]);
-//		//noStroke();
-//		fill(shapecolor);
-//		//noFill();
-//		
-//		beginShape();
-//		curveVertex(floatypos[i][0],floatypos[i][1]);
-//		curveVertex(floatypos[i+1][0],floatypos[i+1][1]);
-//		curveVertex(floatypos[i+2][0],floatypos[i+2][1]);
-//		
-//		curveVertex(floatypos[i][0],floatypos[i][1]);
-//		endShape(CLOSE);
-//	}
-	
-	
-//	noFill();
-//	stroke(shapecolor);
-//	strokeWeight(windowWidth/50);
-//	beginShape();
-//	for (let i = 0; i < numpoints; i++) {
-//		curveVertex(floatypos[i][0],floatypos[i][1],0,0);
-//	}
-//	endShape();
-//	
-//	
-	fill(shapecolor);
-		strokeWeight(1);
-		stroke(shapecolor);
-	for (let i = 1; i < numpoints-1; i++) {
-		
-		beginShape();
-		vertex(floatypos[i+1][0],floatypos[i+1][1]);
-		vertex(floatypos[i][0],floatypos[i][1]);
-		vertex(floatypos[i-1][0],floatypos[i-1][1]);
-		bezierVertex(floatypos[i][0],floatypos[i][1],floatypos[i][0],floatypos[i][1],floatypos[i+1][0],floatypos[i+1][1]);
-		endShape();
-  	}
+	if (floor(coin*3)==2) {
+
+		fill(shapecolor);
+			strokeWeight(1);
+			stroke(shapecolor);
+		for (let i = 1; i < numpoints-1; i++) {
+
+			beginShape();
+			vertex(floatypos[i+1][0],floatypos[i+1][1]);
+			vertex(floatypos[i][0],floatypos[i][1]);
+			vertex(floatypos[i-1][0],floatypos[i-1][1]);
+			bezierVertex(floatypos[i][0],floatypos[i][1],floatypos[i][0],floatypos[i][1],floatypos[i+1][0],floatypos[i+1][1]);
+			endShape();
+		}
 	}
 }
