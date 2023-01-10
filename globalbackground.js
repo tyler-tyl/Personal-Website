@@ -52,7 +52,7 @@ function iteratepoints() {
 
 function generateshape() {
 	let backgroundcolor = color(201, 201, 201);
-	let shapecolor = color(0,coin*100+50,coin*100+50);
+	let shapecolor = color(0,coin*60+80,coin*60+80);
 	clear();
 
 	if (floor(coin*3)==0) {
