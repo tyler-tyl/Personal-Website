@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+:root {
+  --backgroundcolor: #9A729A;
+  --textcolor: #E2E20C;
+}
+
+@font-face {
+  font-family: tgbold;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-Bold.otf");
+}
+@font-face {
+  font-family: gtzbook;
+  src: url("../fonts/GT Zirkon/GT Zirkon Book.otf");
+}
+@font-face {
+  font-family: gtzbold;
+  src: url("../fonts/GT Zirkon/GT Zirkon Bold.otf");
+}
+@font-face {
+  font-family: gtzlight;
+  src: url("../fonts/GT Zirkon/GT Zirkon Light.otf");
+}
+
+body {
+    overflow: hidden;
+	height:100vh;
+	margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;
+	padding: 15px;
+	background:var(--backgroundcolor);
+	color: var(--textcolor);
+}
+
+.maxgrid-container {
+	position:absolute;
+	right:0px;left:0px;bottom:0px;top:0px;
+	margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
+    height: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.left {width: 50%; height: 100%; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
+.right {width: 40%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
+	::-webkit-scrollbar {width: 4px;}
+	::-webkit-scrollbar-track {background: var(--backgroundcolor);}
+	::-webkit-scrollbar-thumb {background: var(--textcolor);border-radius: 2px;}
+	::-webkit-scrollbar-thumb:hover {background: var(--textcolor);border-radius: 2px;}
+	::-webkit-scrollbar-button {display:none;}
+	::-webkit-scrollbar-corner {display:none;}
+
+.left nav {display:flex;justify-content: space-between;}
+	.left .name {font-size: 60px;line-height: 50px;}
+	.left .about {text-align:left;}
+	.left .contact {text-align: right;}
+	.left .portfolio {text-align: center;}
+
+.roledate {display:flex; justify-content: space-between;align-items:center;font-size: 8pt;font-family: gtzlight;line-height: 8pt;}
+
+activityname {
+    display: block;
+    font-size: 18pt;font-family: gtzbold;
+    margin-top: 16pt;line-height: 16pt;margin-bottom: 5pt;
+}
+
+description {
+    display: block;
+    font-size: 16px;font-family: gtzbook;
+    margin-bottom: 0pt;line-height: 16px;margin-top: 5px;
+}
