@@ -24,11 +24,13 @@
 
 body {
     overflow: hidden;
-	height:100vh;
-	margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;
-	padding: 15px;
-	background:var(--backgroundcolor);
-	color: var(--textcolor);
+    height: 100vh;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background: var(--backgroundcolor);
+    color: var(--textcolor);
 }
 
 .maxgrid-container {
@@ -67,4 +69,9 @@ description {
     display: block;
     font-size: 16px;font-family: gtzbook;
     margin-bottom: 0pt;line-height: 16px;margin-top: 5px;
+}
+globalbackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
