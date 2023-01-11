@@ -44,7 +44,7 @@
 @media only screen and (orientation:landscape){
 	:root{--textsize: 16px;}
 	
-	.left {width: 50%; height: 100%; font-family: tgbold; font-size: calc(var(--textsize)*1); display: flex;justify-content: space-between; flex-direction: column}
+	.left {width: 50%; height: 100%; font-family: tgbold;  display: flex;justify-content: space-between; flex-direction: column}
 	.right {width: 50%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
 	.maxgrid-container {
 		position:absolute;
@@ -76,7 +76,7 @@ body {
 	::-webkit-scrollbar-button {display:none;}
 	::-webkit-scrollbar-corner {display:none;}
 
-.left nav {display:flex;justify-content: space-between;}
+.left nav {display:flex;justify-content: space-between; font-size:calc(var(--textsize)*1.5);}
 .left a {color:var(--textcolor); text-decoration:none;}
 	.left .name {font-size:calc(var(--textsize)*4);line-height: calc(var(--textsize)*4);}
 	.left .about {text-align:left;}
