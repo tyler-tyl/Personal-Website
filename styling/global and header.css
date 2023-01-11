@@ -26,6 +26,38 @@
   src: url("../fonts/tomatogrotesk/TomatoGrotesk-Light.otf");
 }
 
+@media only screen and (orientation:portrait){
+	:root{--textsize: 24px;}
+	.left {width: 100%; height: auto; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
+	.right {width: 100%; height: auto; overflow-y: scroll; overflow-x: hidden;}
+	.maxgrid-container {
+		position:absolute;
+		right:0px;left:0px;bottom:0px;top:0px;
+		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
+		height: auto;
+		display: flex;flex-direction: column;
+		gap: 15px;
+	}
+
+}
+
+@media only screen and (orientation:landscape){
+	:root{--textsize: 16px;}
+	
+	.left {width: 50%; height: 100%; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
+	.right {width: 50%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
+	.maxgrid-container {
+		position:absolute;
+		right:0px;left:0px;bottom:0px;top:0px;
+		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
+		height: auto;
+		display: flex;flex-direction: row;
+		gap: 15px;
+	}
+}
+
+
+
 body {
     overflow: hidden;
     height: 100vh;
@@ -53,19 +85,21 @@ body {
 	.left .contact {text-align: right;}
 	.left .portfolio {text-align: center;}
 
-.roledate {display:flex; justify-content: space-between;align-items:center;font-size: 8pt;font-family: tglight;line-height: 8pt;}
-role{font-family: tgmediumslanted;}
-datedata{font-family: tgregular;}
+.roledate {display:flex; justify-content: space-between;align-items:center; font-size: calc(var(--textsize)/1.5); font-family: tglight; line-height: calc(var(--textsize)/1.5);}
+	role{font-family: tgmediumslanted;}
+	datedata{font-family: tgregular;}
 
 activityname {
     display: block;
-    font-size: 18pt;font-family: tgbold;
-    margin-top: 16pt;line-height: 16pt;margin-bottom: 5pt;
+    font-size: calc(var(--textsize)*1.5);font-family: tgbold;
+    margin-top: 18px;line-height: calc(var(--textsize)*1.3);margin-bottom: calc(var(--textsize)/3);
+	text-align: justify-all;
+	text-justify: inter-word;
 }
 description {
     display: block;
-    font-size: 16px;font-family: tglight;
-    margin-bottom: 0pt;line-height: 16px;margin-top: 5px;
+    font-size: var(--textsize);font-family: tglight;
+    margin-bottom: 0pt;line-height: var(--textsize);margin-top: calc(var(--textsize) / 4);
 }
 globalbackground {
     width: 100vw;
@@ -73,31 +107,6 @@ globalbackground {
     position: fixed;
 }
 
-@media only screen and (orientation:portrait){
-	.left {width: 100%; height: auto; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
-	.right {width: 100%; height: auto; overflow-y: scroll; overflow-x: hidden;}
-	.maxgrid-container {
-		position:absolute;
-		right:0px;left:0px;bottom:0px;top:0px;
-		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
-		height: auto;
-		display: flex;flex-direction: column;
-		gap: 15px;
-	}
 
-}
-
-@media only screen and (orientation:landscape){
-	.left {width: 50%; height: 100%; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
-	.right {width: 50%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
-	.maxgrid-container {
-		position:absolute;
-		right:0px;left:0px;bottom:0px;top:0px;
-		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
-		height: auto;
-		display: flex;flex-direction: row;
-		gap: 15px;
-	}
-}
 
 
