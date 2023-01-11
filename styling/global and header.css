@@ -10,16 +10,20 @@
   src: url("../fonts/tomatogrotesk/TomatoGrotesk-Bold.otf");
 }
 @font-face {
-  font-family: gtzbook;
-  src: url("../fonts/GT Zirkon/GT Zirkon Book.otf");
+  font-family: tgmediumslanted;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-MediumSlanted.otf");
 }
 @font-face {
-  font-family: gtzbold;
-  src: url("../fonts/GT Zirkon/GT Zirkon Bold.otf");
+  font-family: tgregular;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-Regular.otf");
 }
 @font-face {
-  font-family: gtzlight;
-  src: url("../fonts/GT Zirkon/GT Zirkon Light.otf");
+  font-family: tgbold;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-Bold.otf");
+}
+@font-face {
+  font-family: tglight;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-Light.otf");
 }
 
 body {
@@ -33,17 +37,9 @@ body {
     color: var(--textcolor);
 }
 
-.maxgrid-container {
-	position:absolute;
-	right:0px;left:0px;bottom:0px;top:0px;
-	margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
-    height: auto;
-    display: flex;
-    gap: 15px;
-}
 
-.left {width: 50%; height: 100%; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
-.right {width: 50%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
+
+
 	::-webkit-scrollbar {width: 4px;}
 	::-webkit-scrollbar-track {background: var(--backgroundcolor);}
 	::-webkit-scrollbar-thumb {background: var(--textcolor);border-radius: 2px;}
@@ -57,17 +53,18 @@ body {
 	.left .contact {text-align: right;}
 	.left .portfolio {text-align: center;}
 
-.roledate {display:flex; justify-content: space-between;align-items:center;font-size: 8pt;font-family: gtzlight;line-height: 8pt;}
+.roledate {display:flex; justify-content: space-between;align-items:center;font-size: 8pt;font-family: tglight;line-height: 8pt;}
+role{font-family: tgmediumslanted;}
+datedata{font-family: tgregular;}
 
 activityname {
     display: block;
-    font-size: 18pt;font-family: gtzbold;
+    font-size: 18pt;font-family: tgbold;
     margin-top: 16pt;line-height: 16pt;margin-bottom: 5pt;
 }
-
 description {
     display: block;
-    font-size: 16px;font-family: gtzbook;
+    font-size: 16px;font-family: tglight;
     margin-bottom: 0pt;line-height: 16px;margin-top: 5px;
 }
 globalbackground {
@@ -75,3 +72,32 @@ globalbackground {
     height: 100vh;
     position: fixed;
 }
+
+@media only screen and (orientation:portrait){
+	.left {width: 100%; height: auto; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
+	.right {width: 100%; height: auto; overflow-y: scroll; overflow-x: hidden;}
+	.maxgrid-container {
+		position:absolute;
+		right:0px;left:0px;bottom:0px;top:0px;
+		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
+		height: auto;
+		display: flex;flex-direction: column;
+		gap: 15px;
+	}
+
+}
+
+@media only screen and (orientation:landscape){
+	.left {width: 50%; height: 100%; font-family: tgbold; font-size: 16px; display: flex;justify-content: space-between; flex-direction: column}
+	.right {width: 50%; height: 100%; overflow-y: scroll; overflow-x: hidden;}
+	.maxgrid-container {
+		position:absolute;
+		right:0px;left:0px;bottom:0px;top:0px;
+		margin-top: 10px;margin-right: 10px;margin-bottom: 10px;margin-left: 10px;
+		height: auto;
+		display: flex;flex-direction: row;
+		gap: 15px;
+	}
+}
+
+

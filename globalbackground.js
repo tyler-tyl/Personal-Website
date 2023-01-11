@@ -5,6 +5,8 @@ let divisions = 800;
 let numpoints = 12;
 let j = 0;
 let coin = Math.random();
+let coin1 = Math.random();
+let coin2 = Math.random();
 
 function setup() {
 	let cnv = createCanvas(windowWidth, windowHeight);
@@ -52,7 +54,7 @@ function iteratepoints() {
 
 function generateshape() {
 	let backgroundcolor = color(201, 201, 201);
-	let shapecolor = color(0,coin*60+80,coin*60+80);
+	let shapecolor = color(coin*170+100,coin1*170+60,coin2*170+60);
 	clear();
 
 	if (floor(coin*3)==0) {
