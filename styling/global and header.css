@@ -10,6 +10,10 @@
   src: url("../fonts/tomatogrotesk/TomatoGrotesk-Bold.otf");
 }
 @font-face {
+  font-family: tgmedium;
+  src: url("../fonts/tomatogrotesk/TomatoGrotesk-Medium.otf");
+}
+@font-face {
   font-family: tgmediumslanted;
   src: url("../fonts/tomatogrotesk/TomatoGrotesk-MediumSlanted.otf");
 }
@@ -76,7 +80,7 @@ body {
 	::-webkit-scrollbar-button {display:none;}
 	::-webkit-scrollbar-corner {display:none;}
 
-.left nav {display:flex;justify-content: space-between; font-size:calc(var(--textsize)*1.5);}
+.left nav {display:flex;justify-content: space-between; font-family:tgmedium; font-size:calc(var(--textsize)*1.5);}
 .left a {color:var(--textcolor); text-decoration:none;}
 	.left .name {font-size:calc(var(--textsize)*4);line-height: calc(var(--textsize)*4);}
 	.left .about {text-align:left;}
